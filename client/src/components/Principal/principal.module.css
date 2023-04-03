@@ -1,0 +1,177 @@
+.grid{
+   display: grid;
+  
+    grid-template-columns: repeat(auto-fit,minmax(210px,1fr)
+    
+     );
+    height: 500px;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+  padding-top: 200px;
+}
+.container{
+  
+    line-height: 40px;
+    display: flex;
+ 
+    width: 850px;
+    height: 600px;
+   flex-direction: column;
+   gap: 50px;
+   text-align: center;
+ 
+}
+.containerP{
+  display:flex;
+    background-image: url('../../Images/fondo4.jpg');
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    max-height: fit-content;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+   
+ 
+}
+.conteinerbutton{
+    display: flex;
+    justify-content: center;
+}
+.container div{
+  border-radius: 50px;
+  background-color: rgba(240, 248, 255, 0.123);
+}
+.container div h1{
+  font-size: 50px;
+  font-family: 'Times New Roman', Times, serif;
+  text-shadow: black 0.1em 0.1em 0.2em
+
+}
+.container p{
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.button{
+    border: 0;
+    background-image: linear-gradient(
+      150deg,
+      #fffd76,
+      rgb(255, 196, 0),
+      rgb(255, 136, 0),
+      rgb(255, 196, 0),
+  
+      #fffd76
+    
+    );
+  
+    border-radius: 8px;
+    color: #fff;
+    font-size: 20px;
+  text-align: center;
+    padding: 4px;
+    cursor: pointer;
+    width: 150px;
+   font-family: 'Times New Roman', Times, serif;
+    transition: .3s;
+    
+  }
+
+  @media (max-width : 1200px){
+
+
+    .button{
+      width: 150px;
+      height: 50px;
+      font-size: 16px;
+    }
+    .button span{
+      width:94px;
+      height: 11px;
+      text-align: center;
+      align-items: center;
+     
+    
+    }
+    .container{
+  
+      line-height: 40px;
+      display: flex;
+   
+      width: 850px;
+      height: 600px;
+     flex-direction: column;
+     gap: 50px;
+     text-align: center;
+   
+  }
+
+
+
+
+     }
+    
+    
+    
+     @media (max-width : 992px){
+  
+      .container{
+  
+        line-height: 40px;
+        display: flex;
+     
+        width: 750px;
+        height: 600px;
+       flex-direction: column;
+       gap: 50px;
+       text-align: center;
+     
+    }
+    .button{
+      width: 150px;
+      height: 50px;
+      font-size: 13px;
+    }
+    .button span{
+      width:94px;
+      height: 11px;
+      text-align: center;
+      align-items: center;
+     
+    
+    }
+       }
+    
+    
+    
+    
+       @media (max-width : 576px){
+        .container{
+  
+          line-height: 40px;
+          display: flex;
+       
+          width: 350px;
+          height: 600px;
+         flex-direction: column;
+         gap: 50px;
+         text-align: center;
+       
+      }
+      .button{
+        width: 150px;
+        height: 50px;
+        font-size: 13px;
+      }
+      .button span{
+        width:94px;
+        height: 11px;
+        text-align: center;
+        align-items: center;
+       
+      
+      }
+         }
+
+  

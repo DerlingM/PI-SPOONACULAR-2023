@@ -1,0 +1,220 @@
+.title {
+ 
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size:50px;
+  width: 100%;
+ justify-items: center;
+    padding-bottom: 20px;
+    text-shadow: black 0.1em 0.1em 0.2em;
+   
+    text-decoration-line: underline;
+  }
+  .text{
+    color: rgb(5, 5, 5);
+    text-align: justify;
+    font-weight: lighter;
+ 
+    font-family: 'Times New Roman', Times, serif;
+background-color: rgba(252, 252, 252, 0.432);
+border-radius: 20px;
+padding: 5px;
+    font-size: 20px;
+  }
+  .btnBack{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    
+  }
+  .hdiets{
+    padding-left: 50px;
+    justify-content: center;
+  }
+  .grid{
+    display: grid;
+    padding: 60px;
+    grid-template-columns: repeat(auto-fit,minmax(210px,1fr)
+    
+     );
+     
+  }
+  .conteinerloading{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    justify-content: center;
+    align-items: start;
+   
+  }
+  .container{
+    display: inline-flexbox;
+   justify-items: center;
+   padding-top: 20px;
+   background-image: url('../../Images/fondo5.jpg');
+   
+   background-position: center;
+   background-size: cover;
+   min-height: 100.9vh;
+   max-height: fit-content;
+  }
+  .image{
+    display: flex;
+align-items: center;
+justify-content: center;
+  }
+  .image img{
+    
+    border-radius: 10%;
+    width: 80%;
+    box-shadow: 0 0 20px;
+  }
+
+  .Content{
+    display: block;
+   justify-items: center;
+    text-align: center;
+    
+  }
+  .Content h1{
+    margin-top: 0px;
+    text-shadow: black 0.1em 0.1em 0.2em
+  }
+ .Diets{
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+    
+ }
+ .p{
+    
+    background: linear-gradient(rgba(255, 255, 255, 0.7),rgba(43, 103, 255, 0.7));
+    border-radius: 5px; 
+     padding: 2px;
+}
+
+  .card{
+    
+    padding: 50px;
+    background: linear-gradient(rgba(115, 136, 189, 0.7),rgba(5,7,12,0.7));
+    border-radius: 20px;
+ 
+   
+  
+  }
+
+  .button{
+    border: 0;
+    
+    background-image: linear-gradient(
+      150deg,
+      #ffffff,
+      rgb(255, 217, 0),
+      #ff6600
+    
+    );
+  
+    border-radius: 8px;
+    color: #fff;
+    font-size: 18px;
+  text-align: center;
+    padding: 4px;
+    cursor: pointer;
+    transition: .3s;
+    width: 150px;
+    height: 50px;
+  
+  }
+
+
+  @media (max-width : 1200px){
+    .title {
+ 
+      color: rgb(0, 0, 0);
+      text-align: center;
+      font-size:45px;
+    width: 100%;
+   justify-items: center;
+      padding-bottom: 20px;
+     
+     
+      text-decoration-line: underline;
+    }
+    .text{
+      color: rgb(5, 5, 5);
+      text-align: justify;
+     
+   
+      font-family: 'Times New Roman', Times, serif;
+  background-color: rgba(252, 252, 252, 0.432);
+  border-radius: 18px;
+  padding: 5px;
+      font-size: 18px;
+    }
+     }
+    
+    
+    
+     @media (max-width : 992px){
+      .title {
+ 
+        color: rgb(0, 0, 0);
+        text-align: center;
+        font-size:35px;
+     
+     justify-items: center;
+        padding-bottom: 20px;
+       
+       
+        text-decoration-line: underline;
+      }
+      .text{
+        color: rgb(5, 5, 5);
+        text-align: justify;
+        font-weight: lighter;
+     
+        font-family: 'Times New Roman', Times, serif;
+    background-color: rgba(252, 252, 252, 0.432);
+    border-radius: 20px;
+    padding: 5px;
+        font-size: 17px;
+      }
+       }
+    
+    
+    
+    
+       @media (max-width : 576px){
+        .title {
+ 
+          color: rgb(0, 0, 0);
+          text-align: center;
+          font-size:30px;
+        width: 100%;
+       justify-items: center;
+          padding-bottom: 20px;
+         
+         
+          text-decoration-line: underline;
+        }
+        .image img{
+    
+          border-radius: 10%;
+          width: 300px;
+        }
+        .text{
+          color: rgb(5, 5, 5);
+          text-align: justify;
+          font-weight: lighter;
+   
+          font-family: 'Times New Roman', Times, serif;
+      background-color: rgba(252, 252, 252, 0.432);
+      border-radius: 20px;
+      padding: 5px;
+          font-size: 15px;
+        }
+         }
+
+  

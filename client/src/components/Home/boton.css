@@ -1,0 +1,168 @@
+.paginado {
+  
+    background-image: linear-gradient(
+        150deg,
+        
+        #f19355,
+        rgb(255, 217, 0),
+        #ff6600
+      
+      );
+  
+    font-size: 15px;
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(252, 251, 251);
+    border-radius: 16%;
+   width: 45px;
+   height: 40px;
+   
+  }
+  .paginado2{
+    background-image: linear-gradient(
+      150deg,
+      
+      #f19355,
+      rgb(255, 217, 0),
+      #ff6600
+    
+    );
+
+  font-size: 15px;
+  border: 1px solid rgb(255, 255, 255);
+  color: rgb(252, 251, 251);
+  border-radius: 16%;
+ width: 45px;
+ height: 40px;
+  }
+  .paginado1{
+    background-image: linear-gradient(
+      150deg,
+      
+      #f19355,
+      rgb(255, 217, 0),
+      #ff6600
+    
+    );
+
+  font-size: 15px;
+  border: 1px solid rgb(255, 255, 255);
+  color: rgb(252, 251, 251);
+  border-radius: 16%;
+ width: 45px;
+ height: 40px;
+  }
+  .active {
+   
+    background: rgba(255, 255, 255, 0.788);
+    cursor: pointer;
+    color: black;
+    
+    transition: .6s;
+  }
+  
+  .paginado:hover {
+    background-image: linear-gradient(
+        150deg,
+        
+        #f19355,
+        rgb(243, 0, 0),
+        #ff6600
+      
+      );
+    cursor: pointer;
+    transition: .6s;
+   
+  }
+  .containerButton{
+    display: inline;
+    flex-wrap: wrap;
+ 
+    gap: 1px;
+    padding-left:50px;
+    padding-right: 50px;
+    
+}
+
+@media (max-width : 1200px){
+  .ContentDiv{
+    display: inline;
+    font-size: 20px;
+     width: 350px;
+    
+  }
+  .button{
+    width: 100px;
+    height: 50px;
+    font-size: 14px;
+  }
+  .button span{
+    width: 45px;
+    height: 11px;
+    text-align: center;
+    align-items: center;
+   
+  
+  }
+  .container{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    gap: 100px;
+  }
+  .barritas{
+     
+    display: block;
+    cursor: pointer;
+ 
+  }
+  .Avtivateoptions{
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 20vh;
+    background-color: #2f302a;
+    top: 100px;
+    left: +100%;
+    transition: all .6s;
+    gap: 5px;
+    
+   }
+   .Avtivateoptions div{
+    margin: 30px;
+   }
+   .ContentDiv{
+    display: flex;
+    justify-content: center;
+  }
+   }
+  
+  
+  .cantPage{
+    display: none;
+  }
+   @media (max-width : 992px){
+    .paginado{
+      width: 40px;
+      display: none;
+     }
+   .cantPage{
+    display: inline;
+    margin: 10px;
+    color: #000000;
+   }
+     }
+  
+  
+  
+  
+     @media (max-width : 576px){
+     .paginado{
+      display: none;
+     
+     }
+     .paginado2{
+      width: 50px;
+     
+     }
+    
+       }

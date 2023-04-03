@@ -1,0 +1,173 @@
+.Title {
+    color: azure;
+  font-size: 24px;
+  height: 80px;
+  font-family: 'Courier New', Courier, monospace;
+  width: 400px;
+ padding: 2px;
+ text-shadow: black 0.1em 0.1em 0.2em;
+  }
+  .text{
+    color: azure;
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: black 0.1em 0.1em 0.2em;
+  }
+  .image{
+border-radius: 10%;
+border-color: rgb(0, 0, 0);
+width: 312px;
+height: 231px;
+
+  }
+
+ .Diets{
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    height: 119px;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+ }
+ .p{
+    
+    background: linear-gradient(rgba(255, 255, 255, 0.87),rgba(160, 157, 0, 0.849));
+    border-radius: 5px; 
+    
+    height: 20px;
+     padding: 2px;
+}
+  .card{
+    background-image: url('../../Images/card3.jpg');
+    
+    padding: 5x;
+    
+    border-radius: 20px;
+   
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 400px;
+    height: 620px;
+    transition: all .6s;
+    box-shadow: 0 0 20px;
+  }
+  .card:hover{
+    transform: scale(1.05);
+  }
+  .contButton{
+    display: block;
+    
+   height: 115px;
+    align-items: end;
+    align-content: end;
+    justify-content: center;
+  }
+  .button{
+    border: 0;
+    background-image: linear-gradient(
+      150deg,
+      
+      #f19355,
+      rgb(255, 217, 0),
+      #ff6600
+    
+    );
+    border-radius: 8px;
+    color: #000000;
+    font-size: 18px;
+  text-align: center;
+    padding: 4px;
+    cursor: pointer;
+    transition: .3s;
+    width: 150px;
+    font-size: 18px;
+  }
+
+ .condbapi{
+  padding-top: 6px;
+  display: block;
+  
+  rotate: -50deg;
+ align-content: flex-start;
+  align-items: start;
+  justify-items: center;
+  justify-content: center;
+  
+  width: 30px;
+  color: aliceblue;
+ }
+
+
+
+ @media (max-width : 1200px){
+.Title{
+  font-size: 22px;
+}
+.Diets{
+  font-size: 15px;
+  padding: 5px;
+}
+.text{
+  font-size: 22px;
+}
+.button{
+  font-size: 18px;
+  width: 150px;
+}
+ }
+
+
+
+ @media (max-width : 992px){
+  .Title{
+    font-size: 20px;
+  }
+  .Diets{
+    font-size: 14px;
+    padding: 10px;
+  }
+ 
+  .text{
+    font-size: 20px;
+  }
+  .button{
+    font-size: 16px;
+    width: 130px;
+  }
+   }
+
+
+
+
+   @media (max-width : 576px){
+    .Title{
+      font-size: 18px;
+    }
+    .Diets{
+      font-size: 12px;
+      padding: 10px;
+    }
+
+    .text{
+      font-size: 18px;
+    }
+    .button{
+      font-size: 14px;
+      width: 120px;
+    }
+    .card{
+      width: 350px;
+      height: 620px;
+    }
+    .Title {
+      color: azure;
+    font-size: 20px;
+    height: 80px;
+    font-family: 'Courier New', Courier, monospace;
+    
+    width: 340px;
+  
+    }
+     }

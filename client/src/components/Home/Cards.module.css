@@ -1,0 +1,51 @@
+.containerPag{
+   
+    
+    display: flex;
+    justify-content: center;
+   
+  flex-wrap: wrap;
+}
+.container{
+    display: inline-flexbox;
+    grid-template-columns: repeat(
+     auto-fit,
+     minmax(150px,
+     1fr)
+    );
+   
+   background-image: url('../../Images/fondo3.jpg');
+   background-position: center;
+   background-size: cover;
+   min-height: 90.9vh;
+   max-height: fit-content;
+   padding-top: 60px;
+   padding-bottom: 60px;
+   flex-wrap: wrap;
+}
+.conteinerloading{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  justify-content: center;
+  align-items: start;
+ 
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    padding-right: 20px;
+    padding-left: 20px;
+    gap: 50px;
+    transition: .6s;
+   
+}
+cards:hover{
+    background: none;
+  }
+  @media (max-width : 1200px){
+    
+  }
