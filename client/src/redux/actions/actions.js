@@ -1,6 +1,6 @@
-import { ALL_RECIPES,POSTRECIPE,PAGE,SEARCH_RECIPE_BYNAME,NO_RECIPE,GET_RECIPE_BYID,ORDER_BY_DIET,ALL_TYPE_DIETS,ORDER_BY_NAME,ORDER_BY_HEALTSCORE,FILTERBY_DBORAPI, GET_TYPE_DIET } from "./types";
+import { ALL_RECIPES,POSTRECIPE,PAGE,SEARCH_RECIPE_BYNAME,NO_RECIPE,GET_RECIPE_BYID,ALL_TYPE_DIETS,ORDER_BY_NAME,ORDER_BY_HEALTSCORE,FILTERBY_DBORAPI, GET_TYPE_DIET } from "./types";
 import axios from 'axios'
-import { useSelector } from "react-redux";
+
 
 
 
@@ -22,7 +22,7 @@ export  function getAllRecipes(){
         
     }}
 }
-export function postNewRecipe(Recipe,res){
+export function postNewRecipe(Recipe){
     return async function(dispatch){
         try {
        let response =    await axios.post(
@@ -52,7 +52,7 @@ export function getRecipeByName(name){
                 payload : recipeName.data
             })
         } catch (error) {
-            console.log('esta en el eror')
+           
             dispatch({type:NO_RECIPE ,payload : error})
         }
     }
@@ -96,6 +96,7 @@ try {
     }
 
 }
+
 export function orderByScore(dat){
     return {
         type: ORDER_BY_HEALTSCORE,

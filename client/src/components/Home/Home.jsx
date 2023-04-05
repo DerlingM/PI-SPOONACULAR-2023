@@ -1,4 +1,4 @@
-import { getAllRecipes } from "../../redux/actions/actions";
+import { getAllRecipes} from "../../redux/actions/actions";
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import  Card  from "../Card/Card";
@@ -7,6 +7,7 @@ import styles from "./Cards.module.css"
 import Paginado from "./helper";
 import Cardnorecipe from "../Card/Cardnorecipe";
 import Loader from '../Loading/Loader.jsx'
+
 
 export default function Home() {
  
@@ -26,7 +27,7 @@ export default function Home() {
     let currenRecipes = [];
     const tamañoRecipe = recipes.length;
     const tamañoPorpagina = 9;
-    let indexFinal = tamañoPorpagina * page; // 9 pagina
+    let indexFinal = tamañoPorpagina * page; // 9 x pagina
     let inicial = indexFinal - tamañoPorpagina; // 9-9=0
     currenRecipes = recipes.slice(inicial, indexFinal);
 
@@ -34,13 +35,8 @@ export default function Home() {
     useEffect(()=>{
    
         dispatch(getAllRecipes());
-  
+      
     },[dispatch])
-    
- 
-   
-
-
 
     return(
         

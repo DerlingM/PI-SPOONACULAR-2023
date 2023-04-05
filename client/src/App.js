@@ -1,5 +1,5 @@
 import './App.css';
-import Postrecipe from './components/postRecipe/Postrecipe';
+import Postrecipe from './components/postRecipe/Postrecipe.jsx';
 import  Home  from './components/Home/Home';
 import Navbar from './components/Home/Navbar/Navbar';
 import {  useEffect } from 'react'

@@ -4,20 +4,7 @@ const axios = require('axios');
 
 const { Recipe, Diets } = require('../db');
 
- const getDiets = async (req,res) => {
-    try {
-     let rec =  await Diets.findAll({
-       include: {
-         model: Recipe,
-         attributes: ['title'],
-       },
-     });
-   
-     res.status(200).json(rec)
-    } catch (error) {
-     res.status(404).json({message:error.message})
-    }
-     };
+
 
 
 
@@ -28,11 +15,11 @@ const { Recipe, Diets } = require('../db');
        let recipes2 = []
        let recipesAll =[];
              const infRecipes = await axios.get(
-               // `https://api.spoonacular.com/recipes/complexSearch?number=100&apiKey=${API_KEY}&addRecipeInformation=true`
-               "http://localhost:3000/results"
+                `https://api.spoonacular.com/recipes/complexSearch?number=100&apiKey=${API_KEY}&addRecipeInformation=true`
+               //"http://localhost:3000/results"
            
                );  
-               console.log(diet)
+        
             let rec =  await Recipe.findAll({
                 include: {
                     model: Diets,
@@ -43,7 +30,7 @@ const { Recipe, Diets } = require('../db');
             });
             recipes2.push(infRecipes)
             // al regresar al link de la api agreggar results despues de data
-            let recipes = recipes2.map(res => res.data.map(data =>{
+            let recipes = recipes2.map(res => res.data.results.map(data =>{
             
            return  { 
                   id: data.id,
@@ -90,7 +77,7 @@ const { Recipe, Diets } = require('../db');
                         res.status(404).json({message:'no se encontro ninguna receta con ese tipo de dietas'})
                         }
                       }
-                        else{
+                    else{
                           res.status(200).json(recipestotal)
                         }
             }

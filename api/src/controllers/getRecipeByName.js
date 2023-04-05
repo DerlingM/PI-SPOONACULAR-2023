@@ -31,7 +31,7 @@ const getRecipeByName = async (req, res)=>{
        
     } catch (error) {
          res.status(404).json({message:error.message});
-         console.log('entro en el catch');
+     
        
     }
 }

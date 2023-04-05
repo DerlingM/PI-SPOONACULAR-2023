@@ -1,5 +1,4 @@
-import { useState } from "react";
-import { useDispatch ,useSelector} from "react-redux";
+import { useDispatch} from "react-redux";
 import { getRecipeByName, paginado } from "../../../redux/actions/actions";
 import  style  from "./search.module.css";
 export default function SearchBar(props) {

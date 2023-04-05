@@ -24,15 +24,11 @@ export default function Paginado({
   function handleClickNext() {
     if (pageactual < pageNumbers.length) {
       dispach(paginado(pageactual + 1));
-    } else {
-      alert('there are no more pages');
     }
   }
   function handleClickPreview() {
     if (pageactual > 1) {
       dispach(paginado(pageactual - 1));
-    } else {
-      alert('there are no more pages');
     }
   }
 

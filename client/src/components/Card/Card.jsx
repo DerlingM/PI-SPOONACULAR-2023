@@ -14,10 +14,11 @@ return(
            props.Diets.length?( props.Diets[0].title?(
                <div  >DB </div>
             ):(<div >API </div>)):(<div >API </div>)
-        }
+}
+    
  </div>
        
-      
+    
      
     <h2 className= {style.Title} >{props?.title}</h2> 
     

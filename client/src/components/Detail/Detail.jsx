@@ -1,23 +1,18 @@
 import Carddetails from "./Carddetails";
 import style from './Carddetail.module.css'
-import { useDispatch , useSelector, useStore} from "react-redux";
+
 import { useEffect } from "react";
 import { useState } from "react";
-import { getRecipeById } from "../../redux/actions/actions";
+
 import { useParams } from "react-router-dom";
 import Loader from '../Loading/Loader.jsx'
 import '../Loading/Loader.css'
-
-import { connect } from "react-redux";
-
-export  function  Detail(props){
- 
-  let  recipes =  props.details;
+export default function  Detail(){
 const [Loading,setLoading] = useState(true);
 const [Details,setDetails] = useState({});
-  const dispatch = useDispatch();
+;
 const {detailId} = useParams();
-let res = useSelector(state => state.Details)
+
 useEffect(()=>{
   fetch(`http://localhost:3001/recipe/recipeId/${detailId}`)
   .then((response )=> response.json())
@@ -60,7 +55,7 @@ useEffect(()=>{
 
 }
 
-export  function mapStateToProps(state){
+/* export  function mapStateToProps(state){
   return{
     details :  state.Details
   }
@@ -73,7 +68,7 @@ export  function mapStateToProps(state){
          dispatch(getRecipeById(id))
       }
   }
-   } 
+   }  */
 
 
-export default connect(mapStateToProps,mapDispatchToProps)(Detail);
+//export default connect(mapStateToProps,mapDispatchToProps)(Detail);

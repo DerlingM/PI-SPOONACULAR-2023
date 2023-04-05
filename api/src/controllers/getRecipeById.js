@@ -51,8 +51,8 @@ const getRecipeById = async (req, res)=>{
        else{
 try {
     let recipeById = await axios.get(
-         //`https://api.spoonacular.com/recipes/${id}/information?&apiKey=${API_KEY}`
-         `http://localhost:3000/results/${id} `
+         `https://api.spoonacular.com/recipes/${id}/information?&apiKey=${API_KEY}`
+         //`http://localhost:3000/results/${id} `
      );
      if(recipeById){
         let Recipeid = {
@@ -77,51 +77,7 @@ try {
 }
        }
           
-/*  try {
-  
-
-    
-    let recipeById = await axios.get(
-       // `https://api.spoonacular.com/recipes/${id}/information?&apiKey=${API_KEY}`
-        `http://localhost:3000/results/${id} `
-    );
-    if(recipeById){
-       let Recipeid = {
-            id: recipeById.data.id,
-            title: recipeById.data.title,
-            image: recipeById.data.image,
-            Diets : recipeById.data.diets,
-            summary:recipeById.data.summary,
-            healtScore:recipeById.data.healthScore,
-            analyzedInstructions:recipeById.data.analyzedInstructions[0]?.steps.map((paso) => {
-                return `${paso.number}   ${paso.step}  `;
-              }),
-        }
-        console.log('vino aqui',Recipeid)
-        res.status(200).send(Recipeid);
-    }
-    else{
-        console.log('vino aqui db')
-       let Recipeid = await Recipe.findOne({
-        where :{
-            id : id
-        },  include: {
-            model: Diets,
-            attributes: ['title'],
-          }, through: {
-            attributes: ['id', 'title'],
-          },
-       })
-          res.status(200).send(Recipeid);
-    }
-    
-    
-  
-    
-} catch (error) {
-
-  res.status(400).send(error);
-} */   
+ 
 
 
 

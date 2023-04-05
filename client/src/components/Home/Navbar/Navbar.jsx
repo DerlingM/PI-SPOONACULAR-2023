@@ -19,12 +19,12 @@ const [typeFilter,setTypeFilter] = useState('No filter')
     let TypeDiets = useSelector(state => state.allTypeDiets)
      let recipes = useSelector(state => state.allRecipes) 
      console.log('cantidad',recipes)
-    function handleOrderScore(e) {
+/*     function handleOrderScore(e) {
         dispatch(orderByScore(e.target.value));
       }
       function handleOrderByName(data){
         dispatch(orderByName(data.target.value))
-      }
+      } */
       function handleFilter(data){
         dispatch(filterByDBorApi(data.target.value))
         if(data.target.value==='All'){
@@ -140,29 +140,10 @@ else{
         <option value="db">Database</option>
         <option value="api">Api</option>
       </select> ):(<></>) } 
-      
-    
-    
       </div>
-      
- 
-     
         </div>
-
-    
-     
-
       </div>
-    
-
-
-      
-     
-       
-      
         </div>
-        
-         
            </div>
            ) 
 }

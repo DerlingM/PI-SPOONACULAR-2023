@@ -83,10 +83,6 @@ elimDiets,
             <div  className={styles.container}>
                 
               { modal &&  <Modal modal={closeModal} />}
-
-
-
-   
                 <form className={styles.container_form}  onSubmit={handleSubmit}>
                <div className={styles.Title} ><h1>New Recipe</h1></div>
                 <label>Title</label>
@@ -122,7 +118,6 @@ elimDiets,
 {/**-------------------------------------------- */}
                     <label>Summary</label>
                <textarea name="summary" id="summary" cols="50" rows="5"
-           
                placeholder='write a summary of the recipe'
                onBlur={handleBlur}
                onChange={handleInputChange}
@@ -153,39 +148,26 @@ elimDiets,
     <div className={styles.divDiets} >
     {form.diets.length?form.diets.map(a =>
     <label key={a} className={styles.container_Diets}><p>{a}</p> <button onClick={()=>elimDiets(a)} >X</button></label>
-   
- 
     ):(<></>)}
     </div>
-  
-
 </div>
    <br/>
 
 {/**-------------------------------------------- */}
                   <label>Steps</label>
                   <textarea name="analyzedInstructions" id="analyzedInstructions" cols="50" rows="5"
-               
                placeholder='write the step by step, separate the steps by a comma '
                onBlur={handleBlur}
                onChange={handleSteps}
-          
                className={errors.analyzedInstructions && styles.warning }
                ></textarea>
-
-         
                 {errors.analyzedInstructions && <p className={styles.errors} >{errors.analyzedInstructions} </p> }
                 <br></br>
                 <div className='contentbt'>
                 <div> <Link to={`/home`} > <button className='boton' >Back</button> </Link></div>
-                <div>{!Object.keys(errors).length && bt? (<button  type="submit" className='boton' >Create</button>):(<button className='botondis' disabled={true} >Create</button>)}</div>
-              
+                <div>{!Object.keys(errors).length && bt? (<button  type="submit" className='boton' >Create</button>):(<button className='botondis' disabled={true} >Create</button>)}</div> 
                 </div>
-               
-      
                 </form>
-
-               
             </div>
         )
        
